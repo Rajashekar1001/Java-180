@@ -1,0 +1,42 @@
+ Day 006 - Strings + Shopping Cart
+
+## String Basics
+
+String is an object that stores a sequence of characters. It is *immutable*.
+
+java
+String s = "Java";
+s.length();          // 4
+s.charAt(0);         // 'J'
+s.substring(1, 3);   // "av"
+s.indexOf('v');      // 2
+s.toUpperCase();     // "JAVA"
+s.equals("Java");    // true
+"a,b,c".split(",");  // ["a","b","c"]
+
+
+## String Pool
+
+java
+String a = "Java";
+String b = "Java";
+String c = new String("Java");
+a == b;        // true  (same pool object)
+a == c;        // false (different object)
+a.equals(c);   // true  (same content)
+
+
+## Project: Shopping Cart
+
+- Arrays for item names, prices and quantities.
+- Total = sum of price x quantity.
+- Apply 10% discount if total > 1000.
+- Print a formatted bill with printf.
+
+## Interview Questions
+1. Why is String immutable?
+2. == vs equals() for Strings?
+3. What is the String pool?
+
+## Practice
+- PalindromeCheck, VowelCounter, ReverseString, Anagram.
