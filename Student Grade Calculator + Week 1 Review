@@ -1,0 +1,44 @@
+# Day 007 - Student Grade Calculator + Week 1 Review
+
+## Project: Student Grade Calculator
+
+- Input marks for 5 subjects.
+- Calculate total, average and percentage.
+- Grade rule:
+
+| Average | Grade |
+|---------|-------|
+| 90+ | A+ |
+| 75 to 89 | A |
+| 60 to 74 | B |
+| 40 to 59 | C |
+| Below 40 | Fail |
+
+java
+int total = 0;
+for (int i = 0; i < 5; i++) total += sc.nextInt();
+double avg = total / 5.0;
+
+
+## Week 1 Review Checklist
+- [ ] JVM, JDK, JRE
+- [ ] Data types and casting
+- [ ] Operators, if-else, switch
+- [ ] Loops and patterns
+- [ ] Strings
+- [ ] 5 projects pushed with READMEs
+
+## Git Task
+
+bash
+git add .
+git commit -m "feat: add grade calculator, docs: week 1 notes"
+git tag week-01-complete
+git push --tags
+
+
+## Interview Questions
+1. Why divide by 5.0 instead of 5?
+2. What is integer division?
+
+---
